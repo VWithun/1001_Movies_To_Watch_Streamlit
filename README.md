@@ -54,7 +54,7 @@ If you want to run the app locally:
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/VWithun/1001_Movies_To_Watch_Streamlit/tree/main
 cd YOUR_REPO
 
 # Create virtual environment (optional but recommended)
@@ -67,4 +67,5 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run movie_app.py
+
 
