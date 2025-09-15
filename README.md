@@ -46,7 +46,7 @@ Check out the app online here:
 [🎬 Open Movie Picker](https://1001moviestowatchapp-rxkgssned4mewxjtf8og9f.streamlit.app/)
 
 
-## License
+## ✅ License
 This project is licensed under the [CC BY-NC-ND 4.0 License](LICENSE).
 
 You may **not** copy, modify, or distribute this code without explicit permission from the author.
@@ -75,4 +75,5 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run movie_app.py
+
 
