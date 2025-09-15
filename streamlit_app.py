@@ -4,7 +4,8 @@ from collections import Counter
 import random
 
 # --- Load CSV ---
-df = pd.read_csv("1001_Movie_List_Sorted.csv")
+df = pd.read_csv("movies_with_full_info_poster.csv")
+df.rename(columns={"year": "Year"}, inplace=True)
 df["Year"] = pd.to_numeric(df["Year"], errors="coerce")
 df["Decade"] = (df["Year"] // 10 * 10).astype("Int64")
 df['Genres'] = df['Genres'].fillna('')
@@ -78,8 +79,20 @@ if st.button("Pick a Random Movie"):
         st.write("No movies match your filters. Try changing your selections.")
     else:
         movie = filtered_df.sample(1).iloc[0]
+
         st.write(f"**{movie['Title']} ({movie['Year']})**")
         st.write(f"Genres: {movie['Genres']}")
         st.write(f"Director: {movie['Director']}")
         st.write(f"Actors: {movie['Actors']}")
-        
+
+        # Plot / summary
+        if 'Plot' in movie and movie['Plot']:
+            st.write(f"**Plot:** {movie['Plot']}")
+
+        # IMDb / OMDb URL
+        if 'OMDb_URL' in movie and movie['OMDb_URL']:
+            st.markdown(f"[🔗 IMDb / OMDb Link]({movie['OMDb_URL']})")
+
+        # Poster image (smaller width, container width not used)
+        if 'Poster_URL' in movie and movie['Poster_URL'] and movie['Poster_URL'] != "N/A":
+            st.image(movie['Poster_URL'], width=250)
