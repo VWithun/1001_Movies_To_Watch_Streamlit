@@ -1,6 +1,6 @@
-# 🎬 1001 Movies You Must See Before You Die - Movie Picker App
+# 🎬 Movies You Must See Before You Die - Movie Picker App
 
-Welcome to the **1001 Movies Movie Picker**! This interactive app lets you explore, filter, and discover some of the most iconic movies according to IMDb's famous list.
+Welcome to the **Movies to Watch Before You Die Movie Picker**! This interactive app lets you explore, filter, and discover some of the most iconic movies according to IMDb's famous list 1001 Movies to Watch Before You Die.
 
 ---
 
@@ -75,5 +75,6 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run movie_app.py
+
 
 
