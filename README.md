@@ -42,9 +42,9 @@ The app uses a curated list of **1001 movies** sourced from IMDb. Each movie con
 ## 🌐 Try it Live
 
 Check out the app online here:  
-[🎬 Open Movie Picker](https://share.streamlit.io/YOUR_USERNAME/YOUR_REPO/main/movie_app.py)  
+[🎬 Open Movie Picker]([https://share.streamlit.io/YOUR_USERNAME/YOUR_REPO/main/movie_app.py](https://1001moviestowatchapp-rxkgssned4mewxjtf8og9f.streamlit.app/))  
 
-> Replace the link with your Streamlit deployment URL once published.
+
 
 ---
 
@@ -67,3 +67,4 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run movie_app.py
+
