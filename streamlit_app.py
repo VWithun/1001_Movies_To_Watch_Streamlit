@@ -39,7 +39,7 @@ if actor_search:
 
 # --- Display ---
 st.title("Movies You Must See Before You Die 🎥")
-st.write("All-Combined Edition")
+st.write("(Version:All Combined Editions)")
 url = "https://www.imdb.com/list/ls024863935/?view=compact&sort=alpha%2Casc"
 st.markdown(f"Based on IMDb's 1001 List: [🔗 Link]({url})")
 
@@ -97,6 +97,10 @@ if st.button("Pick a Random Movie"):
         # Poster image (smaller width, container width not used)
         if 'Poster_URL' in movie and movie['Poster_URL'] and movie['Poster_URL'] != "N/A":
             st.image(movie['Poster_URL'], width=250)
+
+
+st.write("")
+
 
 
 
