@@ -71,5 +71,12 @@ pip install -r requirements.txt
 streamlit run movie_app.py
 
 
+## License
+This project is licensed under the [CC BY-NC-ND 4.0 License](LICENSE).
+
+You may **not** copy, modify, or distribute this code without explicit permission from the author.
+
+Copyright (c) 2025 VWithun
+
 
 
