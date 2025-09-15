@@ -99,7 +99,8 @@ if st.button("Pick a Random Movie"):
             st.image(movie['Poster_URL'], width=250)
 
 
-st.write("Copyright (c) 2025 VWithun")
+st.write("Copyright (c) 2025 VWithun - https://github.com/VWithun/")
+
 
 
 
